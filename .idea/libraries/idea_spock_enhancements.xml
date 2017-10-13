@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="idea-spock-enhancements">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../idea-spock-enhancements.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
