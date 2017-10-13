@@ -8,7 +8,7 @@ public class JavaNumberHelper {
         List<Integer> positiveList = new ArrayList<>();
 
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] % 2 == 0) {
+            if ((numbers[i] % 2 == 0) && (numbers[i] > 0) ) {
                 positiveList.add(numbers[i]);
             }
         }

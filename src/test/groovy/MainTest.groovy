@@ -16,10 +16,17 @@ class MainTest extends Specification {
         def helper = new JavaNumberHelper()
 
         when:
-        def x = helper.findPositives([1,2,3,4,5,6,7,8,9] as int[])
+        def result = helper.findPositives(inputNums as int[])
 
         then: "I get positives"
-        x == [2,4,6,8]
-        x.size() == 4
+        result == expected
+
+        where:
+        inputNums | expected
+        []       |  []
+        [-1, -2]   |  []
+        [1,2,3,4,5,6,7,8,9] | [2,4,6,8]
+
+
     }
 }
